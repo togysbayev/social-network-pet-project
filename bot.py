@@ -5,6 +5,7 @@ import json
 import time
 import logging
 
+
 def run_bot() -> None:
     with open("config.json", 'r') as config_file:
         bot = json.load(config_file)

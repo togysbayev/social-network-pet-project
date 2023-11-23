@@ -3,6 +3,7 @@ from djoser.serializers import UserSerializer as BaseUserSerializer, UserCreateS
 from .models import Post, Like, DisLike
 from rest_framework import serializers
 
+
 class UserSerializer(BaseUserSerializer):
     class Meta(BaseUserSerializer.Meta):
         fields = ['id', 'username', 'email', 'first_name', 'last_name']

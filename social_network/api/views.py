@@ -10,6 +10,7 @@ from .serializers import PostSerializer, LikeSerializer, DisLikeSerializer, Anal
 from .permissions import IsOwnerOfPost
 from .filters import LikeFilter
 
+
 class PostViewSet(ModelViewSet):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
